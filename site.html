@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: lightpink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-container {
+      display: flex;
+      background-color: white;
+      border-radius: 16px;
+      overflow: hidden;
+      width: 800px;
+      height: 500px;
+      }
+      .quadrado {
+        border-radius: 10px;
+        background-color: white;
+        width: 400px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+      }
+      .quadrado input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+      }
+      .quadrado button {
+        width: 95%;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: #005f6a;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        align-content:center;
+        width: 100px;
+        justify-content: flex-start;
+      }
+      .forgot {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #005f6a;
+      }
+      .redessociaislogin {
+        display: flex;
+        gap: 10px;
+      }
+      .redessociaislogin button {
+        background-color: lightgray;
+        flex: 1;
+        border: 1px solid #ddd;
+        color: #333;
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      .redessociaislogin {
+        gap: 10px;
+        display: flex;
+      }
+      .linha-forgot{
+        width: 90%;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        margin-top: 10px;
+      }
+      .linha-forgot a {
+        color: #005f6a;
+        text-decoration:none;
+        font-size: 16px;
+      }
+      .linha-forgot button {
+        background-color: #005f6a;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 20px 12px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .or2{
+        color: #777;
+        font-size: 13px;
+      }
+      .signup{
+        color: #005f6a;
+        cursor: pointer;
+        position: relative;
+        top: -35px;
+        left: 120px;
+      }
+     .imglogin {
+        flex: 1;
+        background: url('https://www.shutterstock.com/image-photo/azure-sky-clouds-bright-wispy-600nw-2603610075.jpg') center/cover no-repeat;
+        position: relative;
+      }
+      </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="quadrado">
+      <h1>Log In</h1>
+      <p>
+        Log in to your account to upload or download pictures, videos or music
+      </p>
+      <input
+        placeholder="Enter your email address"
+        class="email"
+        type="email"
+      />
+      <div class="linha-forgot">
+        <a href="#">Forgot password?</a>
+        <button type="submit">Next →</button>
+      </div>
+        <div class="separador"></div>
+        <div class="or2">Or log in with</div>
+        <div class="redessociaislogin">
+          <button>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+              alt="facebooklogo"
+              width="18PX"
+            />Facebook
+          </button>
+          <button>
+            <img
+              src="https://t.ctcdn.com.br/lvns56iaSMyHvyTur4JeYS_NYeY=/i606944.png"
+              alt="googlelogo"
+              width="18PX"
+            />Google
+          </button>
+        </div>
+        <div class="texto">
+        </div>
+        <p>Don't have an account yet?</p>
+        <div class="signup">Sign up</div>
+      </div>
+      <div class="imglogin"></div>
+    </div>
+  </body>
+</html>

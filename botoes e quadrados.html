@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .box {
+      color: white;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+      font-weight: bold;
+    }
+
+    .azulescuro {
+      background-color: #242e4c;
+      color: white;
+    }
+
+    .VIOLETA {
+      background-color: #738bfd;
+    }
+
+    .Laranja {
+      background-color: #f55623;
+    }
+
+    .Cizento {
+      background-color: #767e96;
+    }
+
+    .cizento {
+      background-color: #e9eaed;
+      color: black;
+    }
+
+    .branco {
+      background-color: #f3f4f6;
+      color: black;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      color: #1e1a50;
+    }
+
+    h2 {
+      color: #1e1a50;
+    }
+
+    p {
+      color: #1e1a50;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .text-branco {
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+    :root {
+      --cor-primaria: #242e4c;
+    }
+
+    .input-text {
+      color: black;
+    }
+
+    .input-text::placeholder {
+      color: lightgray;
+    }
+
+    .botao {
+      color: white;
+      padding: 10px 30px;
+      background-color: var(--cor-primaria);
+    }
+
+    .botao:hover {
+      border-color: greenyellow;
+    }
+
+    .botao2 {
+      color: white;
+      padding: 10px 30px;
+      background-color: var(--cor-primaria);
+    }
+
+    .botao2:hover {
+      border-color: greenyellow;
+    }
+
+    .tabela1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px 15px;
+    }
+
+    input[type="text"]::placeholder {
+      color: #000000;
+      opacity: 1;
+    }
+
+    .input-text {
+      font-size: 16px;
+    }
+
+    .INPUTS23 {
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .alert-message {
+      color: #f55623;
+      font-size: 12px;
+    }
+    #page title {
+      color: #1E1A50;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Buttons</h1>
+  <div class="tabela1">
+    <button class="botao">Primary Button</button>
+    <button class="botao">Primary Button</button>
+    <button class="botao2">Secondary Button</button>
+    <button class="botao2">Secondary Button</button>
+  </div>
+  <h2>Inputs</h2>
+  <p class="INPUTS23">Full Name</p>
+  <input placeholder="Ex. Lida Owen" class="input-text" type="text" />
+  <p class="INPUTS23">Your Name</p>
+  <input placeholder="Anthony Webb" class="input-text" type="text" />
+  <p class="INPUTS23">Password</p>
+  <input placeholder="5+ characters" class="input-text" type="text" />
+  <p class="alert-message">
+    Your password must be at least 6 characters long
+  </p>
+  <p class="INPUTS23">Email Address</p>
+  <input placeholder="myemail@address.com" class="input-text" type="text" />
+
+  <h1>Colors</h1>
+  <div class="container">
+    <div class="box azulescuro" id="azulescuro">#242E4C</div>
+    <div class="box VIOLETA" id="VIOLETA">#738BFD</div>
+    <div class="box Laranja" id="Laranja">#f55623</div>
+    <div class="box Cizento" id="Cizento">#767E96</div>
+    <div class="box cizento" id="cizento">#E9EAED</div>
+    <div class="box branco" id="branco">#F3F4F6</div>
+  </div>
+  <h2>FONTS - Montserrat</h2>
+  <div class="page title" id="page title">Page Title | 28px Bold #1E1A50</div>
+  <div class="secondary title" id="secondary title">Secondary Title | 16px Bold #1E1A50</div>
+  <div class="tertiary title" id="tertiary title">Tertiary Title | 14px Bold #1A2950</div>
+  <div class="link" id="link">Link |Montserrat 14px Medium #738BFD</div>
+  <div class="input placeholder" id="input placeholder">Input Placeholder | 14px Medium #767E96</div>
+  <div class="basic paragraph" id="basic paragraph>Basic Paragraph | 12px Medium"</div>
+  <div class="board summary label" id="Board Summary Label" > Board Summary Label | 12px Medium #767E96</div>
+  <p class="alert-message">
+    Alert Message | 12px Medium #f55623
+  </p>
+
+</body>
+
+</html>

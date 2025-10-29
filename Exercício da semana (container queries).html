@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercício da semana (container queries)</title>
+  <style>
+    body {
+      background-color: lightcoral;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: gray;
+      height: auto;
+      width: 800px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      border-radius: 12px;
+      gap: 20px;
+    }
+
+    .perfil {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background-color: white;
+      padding: 20px;
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .perfil img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    .nametag {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+    }
+
+    .nametag h1 {
+      margin: 0;
+      font-size: 20px;
+      color: #0e1a54;
+      font-family: ;
+    }
+
+    .nametag p {
+      font-size: 16px;
+      color: #211b1b;
+      margin: 5px 0 0 0;
+      ;
+    }
+
+    .followersbutton {
+      margin-left: auto;
+      padding: 8px;
+      border-radius: 5px;
+      background-color: #0e1a54;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+    }
+
+    .oslo {
+      width: 100%;
+      height: auto;
+      padding-top: 60%;
+      
+    }
+
+  </style>
+</head>
+
+<body>
+  <img class="card">
+  <div class="perfil">
+    <img
+      src="https://media.discordapp.net/attachments/1256953204084838430/1256953228994805771/3d967cb3c037a22f7eefb6a7f9f079a1.png?ex=68f8d16a&is=68f77fea&hm=ca3a7f7130bd67e4dc95032bbad156a4c93bda1c95af61b37ccf22170030a520&=&format=webp&quality=lossless&width=451&height=451"
+      alt="imgperfil" />
+    <div class="nametag">
+      <div>
+        <h1>Guilherme Alves</h1>
+        <p>54252 followers</p>
+      </div>
+      <button class="followersbutton">Follow</button>
+    </div>
+  </div>
+  <img class="oslo" src="https://norwaywithpal.com/wp-content/uploads/featured-image-1.png" alt="oslo img" />
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        background-color: gray; 
+        height: 100vh;
+       align-content: center;
+       display: grid;
+       grid-template-areas:
+       ". card1 ."
+       "card3 card1 card4"
+       "card3 card2 card4"
+       ". card2 .";
+    }
+    .card{
+        background-color: white;
+        width: 350px;
+        height: 250px;
+        margin: 10px;
+        padding: 50px;
+        border-radius: 10px;
+        align-items: flex-end;
+        box-shadow: 5px 5px 5px black;
+        flex-direction: column;
+        font-size: ´segoe ui´, Tahoma, Geneva, Verdana, sans-serif;
+        text-align: justify;
+        gap: 1000px;
+    }
+    .bordervermelho{
+        border-top: 5px solid red;
+        grid-area: card1;
+
+    }
+    .borderciano{
+        border-top: 5px solid #00b67f;
+        grid-area: card3;
+        grid-column-gap:20px ;
+    }
+    h2{
+        margin: 0;
+        align-self: flex-start;
+    }
+    .borderlaranja{
+        border-top: 5px solid orange;
+        grid-area: card2;
+    }
+    .borderazul{
+            border-top: 5px solid #0C687F;
+            grid-area: card4;
+            grid-column-gap:20px ;
+
+        }
+        @media (width < 768px) {
+            .container{
+               display: flex;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card bordervermelho">
+        <h1>Team Builder</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat perferendis eum voluptatum fugiat nemo maiores, placeat minus vel ullam odio. Fuga at unde praesentium! Accusantium eum facere velit rerum enim.</p>
+        <img src="adad" alt="dadada">
+    </div>
+    <div class="card borderciano ">
+        <h2>Supervisor</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab libero voluptate sequi atque modi quaerat ipsum, ipsam cum doloribus sed voluptatibus magni dolorum, illum dignissimos laborum. Obcaecati debitis rerum ipsum.</p>
+        <img src="banana" alt="banana">
+    </div>
+    <div class="card borderlaranja">
+        <h3>Karma</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero doloribus eaque. Et veniam, nostrum labore repudiandae optio enim? Iste, iusto asperiores? Eum facilis magnam pariatur dolore nostrum aperiam obcaecati!</p>
+        <img src="arroz" alt="arroz">
+    </div>
+    <div class="card borderazul">
+        <h4>Calculator</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit doloremque vero incidunt unde neque nesciunt, consequatur dolore. Itaque distinctio repudiandae fugit quae rerum aliquid repellat omnis. Quidem suscipit vel accusantium.</p>
+        <img src="massa" alt="massa">
+    </div>
+</body>
+</html>
