@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto info alunos(login)</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+      }
+      .loginbox {
+        background-color: lightblue;
+        width: 500px;
+        padding: 20px;
+        height: 500px;
+        margin: auto;
+      }
+      h2 {
+        text-align: center;
+      }
+      .logouniversidade {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 10%;
+      }
+      .entrarbutao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .password {
+        margin-top: 10px;
+      }
+      .numero_de_utilizador,
+      .passwordinput {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 80%;
+        height: 30px;
+        border: 1px solid black;
+      }
+      .butao_entrar {
+        width: 80%;
+        height: 40px;
+        background-color: lightblue;
+        color: black;
+        border: 2px solid white;
+        cursor: pointer;
+        margin: 20px auto 0 auto;
+        display: block;
+        margin-top: 50px;
+      }
+      .recuperar_password {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 20px;
+        border: none;
+      }
+      .link_recuperar {
+        padding: 10px 20px;
+        border: none;
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+      }
+      label {
+        display: block;
+        margin: 10px auto 5px auto;
+        width: 80%;
+        font-weight: bold;
+        color: black;
+      }
+    </style>
+    <div class="loginbox">
+      <form action="processa_login.php" method="post">
+        <img
+          src="https://img.freepik.com/vetores-premium/logo-do-predio_555601-333.jpg"
+          alt="logo da universidade"
+          class="logouniversidade"
+        />
+        <h2>Projeto Infoalunos</h2>
+        <label for="numero_de_utilizador">Número de aluno:</label>
+        <input
+          type="text"
+          name="numero_de_utilizador"
+          id="numero_de_utilizador"
+          class="numero_de_utilizador"
+          placeholder="Número de aluno"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="passwordinput"
+          placeholder="Password"
+        />
+        <button type="submit" class="butao_entrar">Entrar</button>
+        <div class="recuperar_password">
+          <a href="recuperar_password.php" class="link_recuperar"
+            >Recuperar password</a
+          >
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
