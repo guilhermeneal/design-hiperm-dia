@@ -4,31 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
     <style>
       .table {
         width: 100%;
         margin-bottom: 1rem;
         color: #212529;
         border-collapse: collapse;
+        text-align: center;
       }
-
       .table th,
       .table td {
         padding: 0.75rem;
-        vertical-align: top;
+        vertical-align: middle;
         border-top: 1px solid #005fa3;
       }
-
       .table thead th {
-        vertical-align: bottom;
         border-bottom: 2px solid #dee2e6;
       }
-   .table-group-divider {
+      .table-group-divider {
         border-top: 2px solid #dee2e6;
       }
     </style>
+  </head>
+  <body>
     <table class="table">
       <thead>
         <tr>
@@ -52,10 +50,12 @@
           <td>@fat</td>
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
+  <th scope="row">3</th>
+  <td>Larry the Bird</td>
+  <td></td>
+  <td>@twitter</td>
+</tr>
+
       </tbody>
     </table>
   </body>
