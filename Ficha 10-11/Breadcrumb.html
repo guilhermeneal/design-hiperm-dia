@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7. Breadcrumb</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 20px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      padding: 10px 15px;
+      list-style: none;
+      background-color: #e9ecef;
+      border-radius: 4px;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: "/";
+      padding: 0 8px;
+      color: #6c757d;
+    }
+
+    .breadcrumb-item a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .breadcrumb-item a:hover {
+      text-decoration: underline;
+    }
+
+    .breadcrumb-item.active {
+      color: #6c757d;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Breadcrumb</h1>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>
+</body>
+</html>
