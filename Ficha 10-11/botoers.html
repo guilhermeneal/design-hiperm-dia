@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<title>Accordion</title>
+  <meta charset="UTF-8">
+  <title>8. Buttons</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+      color: #003366;
+      margin: 20px;
+    }
+
+    .btn {
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .btn-primary   { 
+      background-color: #0077cc; 
+    }
+    .btn-secondary { 
+      background-color: #005fa3; 
+    }
+    .btn-success   { 
+      background-color: #28a745; 
+    }
+    .btn-danger    { 
+      background-color: #dc3545; 
+    }
+    .btn-warning   { 
+      background-color: #ffc107; color: #003366; 
+    }
+    .btn-info      {
+       background-color: #17a2b8;
+     }
+    .btn-light     {
+       background-color: #e9ecef; color: #003366; 
+    }
+    .btn-dark      { 
+      background-color: #343a40; 
+    }
+  </style>
 </head>
 <body>
-<details>
-  <summary>Secção 1</summary>
-  <p>Conteúdo da secção 1.</p>
-</details>
-<details>
-  <summary>Secção 2</summary>
-  <p>Conteúdo da secção 2.</p>
-</details>
+  <h1>Buttons</h1>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-light">Light</button>
+  <button type="button" class="btn btn-dark">Dark</button>
 </body>
 </html>
+
