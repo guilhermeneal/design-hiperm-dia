@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        background: #005fa3;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+      .forma {
+        padding-left: 0.75rem;
+        clip-path: polygon(
+          100% 0%,
+          100% 100%,
+          5px 100%,
+          5px calc(50% + 5px),
+          0% 50%,
+          5px calc(50% - 5px),
+          5px 0%
+        );
+      }
+      #info-opener {
+        anchor-name: --info-opener;
+      }
+      .info-tooltip[popover] {
+        background: #007bff;
+        padding: 5px 10px;
+        border: none;
+        color: #fff;
+      }
+      #info {
+        margin: 0;
+        position: absolute;
+        position-anchor: --info-opener;
+        position-area: right;
+        position-try-fallbacks: left;
+      }
+    </style>
+
+    <section class="painel">
+      <h2>Tooltip</h2>
+      <div class="tooltip">
+        ℹ️ Informação
+        <span class="tooltiptext">Texto do tooltip</span>
+      </div>
+    </section>
+    <button id="info-opener" popovertarget="info" class="info-icon">
+      informação
+    </button>
+    <div id="info" popover class="info-tooltip forma">
+      Lorem ipsum dolor sit amet
+    </div>
+  </body>
+</html>
